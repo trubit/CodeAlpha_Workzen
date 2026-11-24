@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <!-- Workzen Icon Mark -->
+  <defs>
+    <linearGradient id="wz-primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <filter id="wz-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#4F46E5" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g transform="translate(6, 6)">
+    <!-- Rounded Container -->
+    <rect width="48" height="48" rx="14" fill="url(#wz-primary-grad)" filter="url(#wz-shadow)" />
+    <!-- Dynamic 'W' & 'Z' Flow Path -->
+    <path d="M14 18L24 32L34 18" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M15 32H33L21 38H33" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+    <circle cx="34" cy="18" r="2.5" fill="#38BDF8" />
+  </g>
+
+  <!-- Typography -->
+  <text x="68" y="35" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="24" fill="#0F172A" letter-spacing="-0.5">WORKZEN</text>
+  <text x="69" y="48" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="600" font-size="9.5" fill="#64748B" letter-spacing="1">ENTERPRISE SAAS</text>
+</svg>
+

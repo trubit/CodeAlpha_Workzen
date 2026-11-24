@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  workzen-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: workzen_app
+    ports:
+      - "5050:5050"
+      - "3070:3070"
+    environment:
+      - NODE_ENV=development
+      - PORT=5050
+      - CLIENT_URL=http://localhost:3070
+      - MONGODB_URI=mongodb://mongo:27017/workzen_dev
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:7.0
+    container_name: workzen_mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=workzen_dev
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
+    driver: local

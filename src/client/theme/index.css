@@ -1,0 +1,255 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  /* Master Brand Colors */
+  --wz-primary: #6366f1;
+  --wz-primary-hover: #4f46e5;
+  --wz-primary-light: #eef2ff;
+  --wz-purple: #8b5cf6;
+  --wz-secondary: #0ea5e9;
+  --wz-success: #10b981;
+  --wz-warning: #f59e0b;
+  --wz-danger: #f43f5e;
+  
+  /* Slate Light Palette */
+  --wz-slate-900: #0f172a;
+  --wz-slate-800: #1e293b;
+  --wz-slate-700: #334155;
+  --wz-slate-600: #475569;
+  --wz-slate-500: #64748b;
+  --wz-slate-400: #94a3b8;
+  --wz-slate-300: #cbd5e1;
+  --wz-slate-200: #e2e8f0;
+  --wz-slate-100: #f1f5f9;
+  --wz-slate-50: #f8fafc;
+
+  /* Linear-Inspired Dark Palette */
+  --wz-dark-canvas: #0b0c10;
+  --wz-dark-sidebar: #12131a;
+  --wz-dark-card: #171822;
+  --wz-dark-inner: #1e202e;
+  --wz-dark-border: #272a3b;
+  --wz-dark-border-high: #3d4259;
+
+  /* Typography System (Inter as Primary SaaS Font) */
+  --wz-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --wz-font-mono: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--wz-font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--wz-slate-50);
+  color: var(--wz-slate-900);
+  letter-spacing: -0.011em;
+}
+
+/* Centralized Workzen Typography Hierarchy */
+.wz-display-heading {
+  font-family: var(--wz-font-primary);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--wz-slate-900);
+}
+
+.wz-page-heading {
+  font-family: var(--wz-font-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--wz-slate-900);
+}
+
+.wz-section-heading {
+  font-family: var(--wz-font-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--wz-slate-900);
+}
+
+.wz-card-heading {
+  font-family: var(--wz-font-primary);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--wz-slate-900);
+}
+
+.wz-body {
+  font-family: var(--wz-font-primary);
+  font-size: 0.925rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--wz-slate-700);
+}
+
+.wz-description {
+  font-family: var(--wz-font-primary);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--wz-slate-500);
+}
+
+.wz-label {
+  font-family: var(--wz-font-primary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--wz-slate-700);
+}
+
+.wz-form-text {
+  font-family: var(--wz-font-primary);
+  font-size: 0.775rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--wz-slate-500);
+}
+
+.wz-btn-text {
+  font-family: var(--wz-font-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+.wz-nav-item {
+  font-family: var(--wz-font-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+
+.wz-table-head {
+  font-family: var(--wz-font-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--wz-slate-500);
+}
+
+.wz-table-cell {
+  font-family: var(--wz-font-primary);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--wz-slate-800);
+}
+
+.wz-caption {
+  font-family: var(--wz-font-primary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--wz-slate-500);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Frosted Glass Utilities */
+.wz-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.wz-glass-dark {
+  background: rgba(23, 24, 34, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(39, 42, 59, 0.8);
+}
+
+/* Workzen Enterprise Card Styles */
+.wz-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.wz-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-color: #cbd5e1;
+}
+
+.wz-card-dark {
+  background: var(--wz-dark-card);
+  border: 1px solid var(--wz-dark-border);
+  border-radius: 12px;
+  color: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.wz-card-dark:hover {
+  border-color: var(--wz-dark-border-high);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Floating Pill Navigation */
+.wz-pill-nav {
+  background: #0f172a;
+  color: #ffffff;
+  border-radius: 35px;
+  padding: 8px 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Soft Badges */
+.badge-soft-primary {
+  background-color: #eef2ff;
+  color: #4f46e5;
+  border: 1px solid #c7d2fe;
+}
+.badge-soft-success {
+  background-color: #ecfdf5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
+}
+.badge-soft-warning {
+  background-color: #fffbeb;
+  color: #d97706;
+  border: 1px solid #fde68a;
+}
+.badge-soft-danger {
+  background-color: #fff1f2;
+  color: #e11d48;
+  border: 1px solid #fecdd3;
+}
+.badge-soft-slate {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+/* Active Workspace Gradient Highlight */
+.wz-active-workspace-gradient {
+  background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+}

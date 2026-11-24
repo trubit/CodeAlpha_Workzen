@@ -1,0 +1,18 @@
+# WORKZEN Enterprise SaaS - Robots.txt
+User-agent: *
+Allow: /
+Allow: /features
+Allow: /solutions
+Allow: /pricing
+Allow: /about
+Allow: /faq
+Allow: /contact
+
+# Disallow internal application and api states from search crawler indexation
+Disallow: /api/
+Disallow: /app/
+Disallow: /settings/
+Disallow: /enterprise_dashboard/
+
+Sitemap: /sitemap.xml
+

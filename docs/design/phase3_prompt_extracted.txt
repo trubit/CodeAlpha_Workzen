@@ -1,0 +1,799 @@
+<USER_REQUEST>
+# WORKZEN — PHASE 3
+# COMPLETE UI/UX DESIGN SYSTEM, VISUAL DESIGN PICTURES AND INTERACTIVE PROTOTYPES
+
+## ROLE
+
+Act as a world-class Senior Product Designer, UI/UX Designer, Design Systems Architect, Frontend Architect and Senior React Engineer.
+
+You have extensive experience designing enterprise SaaS applications comparable in design quality to ClickUp, Linear, Asana, Monday.com, Notion and other successful productivity platforms.
+
+Your responsibility is to design the complete visual identity and reusable UI/UX design system for WORKZEN.
+
+Phase 1 and Phase 2 are expected to be completed and approved.
+
+Do not assume their implementation is correct without inspecting the repository.
+
+This phase must produce actual visual design deliverables, design pictures, screen prototypes, reusable components and design documentation inside the existing Workzen repository.
+
+A text-only design report is NOT acceptable.
+
+---
+
+# 1. OFFICIAL PRODUCT IDENTITY
+
+Product name: WORKZEN
+
+Product category: Enterprise Project Management and Team Collaboration SaaS.
+
+Official tagline:
+
+"Plan Smarter. Work Together. Achieve More."
+
+Workzen is designed for:
+
+- Individuals.
+- Freelancers.
+- Small businesses.
+- Startups.
+- Growing teams.
+- Large organisations.
+- Enterprise companies.
+
+The platform should communicate:
+
+- Productivity.
+- Professionalism.
+- Simplicity.
+- Reliability.
+- Collaboration.
+- Innovation.
+- Business efficiency.
+
+Do not use TaskFlow Enterprise or another previous product name.
+
+All visual branding must use WORKZEN.
+
+---
+
+# 2. MANDATORY FIRST ACTION: SCAN THE EXISTING PROJECT
+
+Before creating or changing anything, thoroughly inspect the existing Workzen repository.
+
+Inspect:
+
+- Phase 1 architecture documentation.
+- Phase 2 project setup and configuration.
+- Existing frontend architecture.
+- Existing backend architecture.
+- Existing React components.
+- Existing CSS.
+- Existing fonts.
+- Existing images and assets.
+- Existing icons.
+- Existing design tokens.
+- Existing routing.
+- Existing layout components.
+- Existing MUI configuration.
+- Existing Bootstrap configuration.
+- Existing responsive implementation.
+- Existing prototype files.
+- Existing screenshots.
+- Existing package dependencies.
+
+Determine:
+
+1. What design infrastructure already exists.
+2. What works correctly.
+3. What is incomplete.
+4. What is inconsistent.
+5. What needs improvement.
+6. What must be preserved.
+
+Do not replace working code without a verified reason.
+
+If Phase 2 has not been completed and approved, STOP and request the Phase 2 completion report. Do not silently bypass phase approval.
+
+---
+
+# 3. DESIGN RESEARCH AND PRODUCT BENCHMARKING
+
+Research and study the UI/UX patterns of successful project management SaaS products, including:
+
+- ClickUp.
+- Linear.
+- Asana.
+- Monday.com.
+- Notion.
+- Jira.
+
+Study:
+
+- Navigation.
+- Sidebar organisation.
+- Dashboard hierarchy.
+- Project layouts.
+- Task cards.
+- Kanban boards.
+- Calendar interfaces.
+- Forms.
+- Tables.
+- Search.
+- Notifications.
+- Settings.
+- Responsive behaviour.
+- Typography.
+- Spacing.
+- Visual hierarchy.
+- Accessibility.
+
+Use these products as design references only.
+
+Do not copy their proprietary branding, logos, illustrations or exact interfaces.
+
+Create an original Workzen visual identity.
+
+Document useful design observations and explain the decisions made.
+
+---
+
+# 4. GOOGLE STITCH — MANDATORY DESIGN WORKFLOW
+
+Use Google Stitch for UI/UX design and prototyping.
+
+If access is available:
+
+1. Open Google Stitch.
+2. Create a dedicated Workzen design project.
+3. Establish the Workzen visual direction.
+4. Generate multiple design concepts.
+5. Create the required screen designs.
+6. Refine the designs.
+7. Compare alternatives.
+8. Select the strongest visual direction.
+9. Export or capture the resulting design assets.
+10. Save accessible deliverables in the Workzen repository.
+
+Do not claim to have used Google Stitch if you do not have access.
+
+If Google Stitch is unavailable:
+
+- Create equivalent original visual designs using available design tools.
+- Build high-fidelity prototypes inside the existing React/Vite project.
+- Generate or export actual visual design pictures using available tools.
+- Save screenshots or visual exports in the project.
+- Continue without blocking development.
+
+Do not stop just because Google Stitch access is unavailable.
+
+---
+
+# 5. ACTUAL VISUAL DESIGN PICTURES — CRITICAL REQUIREMENT
+
+This is mandatory.
+
+Create actual visual UI/UX design pictures for Workzen.
+
+Do not submit only written descriptions, Mermaid diagrams or plain wireframes.
+
+Create high-quality visual representations of the major screens.
+
+Required visual design pictures:
+
+1. Workzen landing page.
+2. Login page.
+3. Registration page.
+4. Organisation dashboard.
+5. Enterprise dashboard.
+6. Workspace dashboard.
+7. Project overview.
+8. Kanban board.
+9. Task details page.
+10. Team management page.
+11. Notification centre.
+12. Calendar and scheduling.
+13. Reports and analytics.
+14. Organisation settings.
+15. User profile and preferences.
+16. Subscription and billing page.
+
+For each screen:
+
+- Produce a desktop design.
+- Produce a mobile design.
+- Include tablet behaviour where the layout materially changes.
+- Use realistic interface content.
+- Show appropriate navigation.
+- Show realistic component relationships.
+- Use consistent typography and spacing.
+- Use the approved Workzen visual identity.
+
+The pictures must be clear enough to evaluate the intended interface before full implementation.
+
+Save the design pictures in a structured folder, for example:
+
+docs/design/screenshots/
+
+Use descriptive filenames such as:
+
+- landing-page-desktop.png
+- landing-page-mobile.png
+- login-desktop.png
+- login-mobile.png
+- dashboard-desktop.png
+- dashboard-mobile.png
+- kanban-desktop.png
+- kanban-mobile.png
+- project-overview-desktop.png
+- task-details-desktop.png
+- team-management-desktop.png
+- calendar-desktop.png
+- analytics-desktop.png
+- settings-desktop.png
+
+Use the actual approved screens and do not create misleading screenshots of unfinished or imaginary functionality.
+
+If a screenshot capture tool is available, use it to capture the real prototype.
+
+If screenshots cannot be generated in the environment, clearly report the limitation and provide the actual design files or prototype implementation instead.
+
+Never create empty image files or rename unrelated images to pretend that designs are complete.
+
+---
+
+# 6. WORKZEN BRAND IDENTITY
+
+Develop a professional visual identity.
+
+Define:
+
+- Primary brand colour.
+- Secondary brand colour.
+- Accent colours.
+- Neutral palette.
+- Background colours.
+- Surface colours.
+- Border colours.
+- Text colours.
+- Success colours.
+- Warning colours.
+- Error colours.
+- Information colours.
+
+Create:
+
+- Primary logo concept.
+- Secondary logo concept.
+- Icon-only logo concept.
+- Light-background logo.
+- Dark-background logo.
+- Brand typography.
+- Brand spacing rules.
+- Visual usage guidelines.
+
+Explore multiple visual directions before selecting one.
+
+The final brand identity must be recognisable, modern, trustworthy and suitable for a global SaaS business.
+
+Do not use random colours throughout the application.
+
+Do not use excessive gradients, excessive shadows or unnecessary visual effects.
+
+---
+
+# 7. TYPOGRAPHY SYSTEM
+
+Research and select a professional typography combination.
+
+The typography must be:
+
+- Modern.
+- Highly readable.
+- Professional.
+- Suitable for dashboards.
+- Suitable for tables and data-heavy interfaces.
+- Suitable for mobile devices.
+- Consistent across all screens.
+
+Define:
+
+- Display headings.
+- Page headings.
+- Section headings.
+- Body text.
+- Secondary text.
+- Labels.
+- Buttons.
+- Captions.
+- Data and numeric text.
+
+Create responsive typography scales.
+
+Use reliable font loading and sensible fallback fonts.
+
+Avoid using too many different font families.
+
+---
+
+# 8. COMPLETE DESIGN SYSTEM
+
+Create a reusable Workzen design system.
+
+Include:
+
+### Buttons
+- Primary.
+- Secondary.
+- Tertiary.
+- Outlined.
+- Text.
+- Destructive.
+- Icon buttons.
+- Loading buttons.
+- Disabled buttons.
+
+### Form components
+- Text fields.
+- Password fields.
+- Search fields.
+- Text areas.
+- Select fields.
+- Multi-select fields.
+- Checkboxes.
+- Radio buttons.
+- Switches.
+- Date pickers.
+- Time pickers.
+- Validation messages.
+
+### Navigation
+- Desktop sidebar.
+- Collapsible sidebar.
+- Mobile navigation.
+- Top navigation.
+- Breadcrumbs.
+- Tabs.
+- Menus.
+- Context menus.
+
+### Data components
+- Tables.
+- Cards.
+- Avatars.
+- Avatar groups.
+- Badges.
+- Status indicators.
+- Progress bars.
+- Statistics cards.
+- Charts.
+- Pagination.
+- Filters.
+- Sorting controls.
+
+### Feedback components
+- Toast notifications.
+- Alert banners.
+- Confirmation dialogs.
+- Loading indicators.
+- Skeleton loaders.
+- Empty states.
+- Error states.
+- Success states.
+
+### Project management components
+- Project cards.
+- Task cards.
+- Kanban columns.
+- Task priority indicators.
+- Task status indicators.
+- Assignee selectors.
+- Project progress indicators.
+- Activity timelines.
+- Comment sections.
+
+Every component must have consistent visual behaviour and appropriate responsive states.
+
+---
+
+# 9. DARK MODE AND LIGHT MODE
+
+Design both themes.
+
+Light mode:
+- Professional.
+- Clean.
+- Clear.
+- Easy to read.
+- Suitable for extended work sessions.
+
+Dark mode:
+- Comfortable.
+- Balanced contrast.
+- Clear surfaces.
+- Readable text.
+- Consistent component styling.
+
+Define theme tokens rather than manually styling every component separately.
+
+Theme switching must be supported by the design system.
+
+Do not use colours that make text unreadable.
+
+---
+
+# 10. RESPONSIVE DESIGN
+
+Workzen must provide an excellent experience on:
+
+- Small mobile phones.
+- Large mobile phones.
+- Tablets.
+- Laptops.
+- Desktop monitors.
+- Wide desktop screens.
+
+Create actual responsive designs.
+
+Define suitable breakpoints based on the interface requirements.
+
+Requirements:
+
+- No horizontal overflow.
+- No clipped content.
+- No overlapping navigation.
+- No broken tables.
+- No inaccessible actions.
+- Properly adapted Kanban interfaces.
+- Responsive dialogs and forms.
+- Readable typography.
+- Touch-friendly controls.
+- Mobile-friendly navigation.
+
+Do not simply shrink desktop screens to fit mobile.
+
+Design mobile layouts intentionally.
+
+---
+
+# 11. REQUIRED HIGH-FIDELITY SCREEN PROTOTYPES
+
+Create interactive prototypes for:
+
+1. Public landing page.
+2. Login.
+3. Registration.
+4. Enterprise dashboard.
+5. Organisation dashboard.
+6. Workspace dashboard.
+7. Project overview.
+8. Kanban board.
+9. Task details.
+10. Team management.
+11. Notification centre.
+12. Calendar.
+13. Reports and analytics.
+14. Organisation settings.
+15. User profile.
+
+Prototype interactions should include appropriate examples such as:
+
+- Sidebar navigation.
+- Tabs.
+- Dropdown menus.
+- Search interactions.
+- Modal opening and closing.
+- Theme switching.
+- Responsive navigation.
+- Task card interactions.
+- Kanban interactions where appropriate.
+- Form validation states.
+
+Use realistic sample content only within clearly isolated design prototypes.
+
+Do not insert prototype data into production database logic.
+
+Do not create fake authentication or present prototype interactions as real backend functionality.
+
+---
+
+# 12. IMPLEMENT THE DESIGN SYSTEM IN THE EXISTING PROJECT
+
+After the visual direction and prototypes have been approved internally, implement the reusable design foundation inside the existing React/Vite application.
+
+Use:
+
+- React.
+- TypeScript.
+- Material UI.
+- Bootstrap.
+- React-Bootstrap.
+- Existing approved state management and project architecture.
+
+Do not use:
+
+- Tailwind CSS.
+- Redux.
+- Next.js.
+- Unnecessary component libraries.
+
+Create reusable components, theme configuration, design tokens and layout primitives.
+
+Avoid:
+
+- Duplicated CSS.
+- Inline styles everywhere.
+- Giant components.
+- Unnecessary dependencies.
+- Hardcoded business data.
+- Inconsistent design values.
+
+The design system must be ready for subsequent phases.
+
+Do not build every future business feature during this phase.
+
+---
+
+# 13. UI/UX ACCESSIBILITY
+
+Ensure:
+
+- Keyboard navigation.
+- Visible focus states.
+- Semantic HTML.
+- Accessible form labels.
+- Accessible dialogs.
+- Appropriate colour contrast.
+- Screen-reader-friendly controls.
+- Reduced-motion support.
+- Clear validation messages.
+- Consistent interaction feedback.
+
+Do not sacrifice accessibility for visual appearance.
+
+---
+
+# 14. DESIGN DOCUMENTATION
+
+Create or update the following documentation:
+
+- Workzen brand guidelines.
+- Workzen colour system.
+- Typography guidelines.
+- Spacing and sizing guidelines.
+- Component guidelines.
+- Responsive design guidelines.
+- Dark and light theme guidelines.
+- UI/UX research and benchmark findings.
+- Screen design specifications.
+- Design decisions and rationale.
+
+Save files in an organised documentation structure, for example:
+
+docs/design/
+docs/design/screenshots/
+docs/design/brand/
+docs/design/components/
+docs/design/prototypes/
+
+Use the existing repository structure if it already provides a better location.
+
+---
+
+# 15. CODE AND DESIGN DIAGRAMS
+
+Create diagrams for:
+
+1. Workzen design system architecture.
+2. Theme and token structure.
+3. Reusable component hierarchy.
+4. Frontend layout architecture.
+5. Responsive navigation behaviour.
+6. UI component relationships.
+7. Prototype-to-implementation workflow.
+
+Use Mermaid or another appropriate diagramming tool.
+
+Diagrams must reflect the actual implementation.
+
+---
+
+# 16. VISUAL QUALITY REVIEW
+
+Review the actual design pictures and prototypes.
+
+Check:
+
+- Brand consistency.
+- Visual hierarchy.
+- Typography.
+- Spacing.
+- Alignment.
+- Colour contrast.
+- Component consistency.
+- Responsive layouts.
+- Mobile usability.
+- Navigation clarity.
+- Form usability.
+- Empty and error states.
+- Overall professional appearance.
+
+Compare the screens with the selected design direction.
+
+Identify and correct inconsistencies.
+
+Do not accept unfinished screens merely because they render.
+
+---
+
+# 17. TESTING AND VERIFICATION
+
+Run the appropriate checks.
+
+Verify:
+
+- TypeScript compilation.
+- Linting.
+- Production build.
+- Component rendering.
+- Theme switching.
+- Responsive layout behaviour.
+- Navigation interactions.
+- Form validation.
+- Accessibility checks.
+- Prototype interactions.
+
+Inspect actual rendered prototype screens using available visual inspection tools.
+
+Do not claim visual verification if no actual visual inspection was performed.
+
+Do not use browser testing as a substitute for automated tests.
+
+Do not break existing working application functionality.
+
+---
+
+# 18. MANDATORY CODE REVIEW
+
+Run:
+
+/code-review
+
+Review:
+
+- Design architecture.
+- Component reusability.
+- TypeScript quality.
+- CSS quality.
+- Accessibility.
+- Responsive behaviour.
+- Dependency management.
+- Theme consistency.
+- Performance.
+- Existing functionality regressions.
+- Unnecessary abstractions.
+- Duplicate components.
+
+Fix all issues within Phase 3 scope.
+
+If /code-review is unavailable, perform an equivalent comprehensive review.
+
+---
+
+# 19. PHASE 3 FINAL DELIVERABLES
+
+Provide:
+
+1. Initial repository scan report.
+2. Design research findings.
+3. Selected Workzen visual direction.
+4. Brand identity.
+5. Logo concepts.
+6. Colour palette.
+7. Typography system.
+8. Spacing system.
+9. Light theme.
+10. Dark theme.
+11. Reusable UI components.
+12. Desktop design pictures.
+13. Mobile design pictures.
+14. Tablet design references where applicable.
+15. High-fidelity screen prototypes.
+16. Interactive prototype.
+17. Responsive design implementation.
+18. Design system documentation.
+19. Component diagrams.
+20. Testing report.
+21. Code-review report.
+22. Remaining issues.
+
+Provide the actual file paths for all generated design pictures, prototype files, documentation and implementation files.
+
+---
+
+# 20. STRICT PHASE CONTROL
+
+This is Phase 3 only.
+
+Do not begin Phase 4.
+
+Do not implement the full landing page or other future business features.
+
+Do not implement authentication or business logic belonging to later phases.
+
+Do not create static mock pages and claim the application is complete.
+
+Do not replace existing working functionality without understanding it.
+
+Do not commit, push, create pull requests or deploy.
+
+When Phase 3 is complete:
+
+1. Present the visual design pictures.
+2. Present the interactive prototype.
+3. Provide the file paths.
+4. Explain the selected visual identity.
+5. Report responsive verification.
+6. Report test results.
+7. Report /code-review findings.
+8. List remaining issues.
+9. Stop and wait for my approval.
+
+# FINAL INSTRUCTION
+
+Start by scanning the existing Workzen repository and verifying the approved Phase 1 and Phase 2 deliverables.
+
+Then research the visual direction, create the Google Stitch project if accessible, produce actual UI/UX design pictures, build the high-fidelity prototypes, implement the reusable design system, verify the result and run /code-review.
+
+The visual designs must be visible and accessible inside the VS Code project.
+
+I want to see actual professional Workzen screen designs, not just written explanations of what the screens should look like.
+
+Build a world-class enterprise SaaS design system that can support the complete Workzen application.
+
+Complete Phase 3 only, then stop for approval.                                      What I expect to see inside VS Code
+The coding agent should produce a structure similar to this:           workzen/
+├── docs/
+│   └── design/
+│       ├── brand-guidelines.md
+│       ├── design-system.md
+│       ├── responsive-guidelines.md
+│       ├── diagrams/
+│       ├── brand/
+│       ├── screenshots/
+│       │   ├── landing-page-desktop.png
+│       │   ├── landing-page-mobile.png
+│       │   ├── dashboard-desktop.png
+│       │   ├── dashboard-mobile.png
+│       │   ├── kanban-desktop.png
+│       │   └── kanban-mobile.png
+│       └── prototypes/
+├── src/
+│   ├── frontend/
+│   │   ├── components/
+│   │   ├── theme/
+│   │   ├── design-system/
+│   │   └── layouts/
+│   ├── backend/
+│   └── shared/
+└── package.json
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-11T17:05:23+01:00.
+
+The user's current state is as follows:
+Active Document: c:\Users\USER\OneDrive\Desktop\workzen\.env (LANGUAGE_UNSPECIFIED)
+Cursor is on line: 50
+Other open documents:
+- c:\Users\USER\OneDrive\Desktop\workzen\src\server\routes\index.ts (LANGUAGE_UNSPECIFIED)
+- c:\Users\USER\OneDrive\Desktop\workzen\src\server\index.ts (LANGUAGE_UNSPECIFIED)
+- c:\Users\USER\OneDrive\Desktop\workzen\src\client\api\client.ts (LANGUAGE_UNSPECIFIED)
+- c:\Users\USER\OneDrive\Desktop\workzen\src\client\components\layout\Sidebar.tsx (LANGUAGE_UNSPECIFIED)
+- c:\Users\USER\OneDrive\Desktop\workzen\src\client\store\useWorkzenStore.ts (LANGUAGE_UNSPECIFIED)
+
+The user has uploaded 4 image(s):
+- C:/Users/USER/.gemini/antigravity/brain/3f6fc957-e158-4d60-a774-789bda36f09a/.user_uploaded/media_1794412508148_ede72fa6.jpg
+- C:/Users/USER/.gemini/antigravity/brain/3f6fc957-e158-4d60-a774-789bda36f09a/.user_uploaded/media_1794412628926_ee24d489.jpg
+- C:/Users/USER/.gemini/antigravity/brain/3f6fc957-e158-4d60-a774-789bda36f09a/.user_uploaded/media_1794412711039_f9d69b09.jpg
+- C:/Users/USER/.gemini/antigravity/brain/3f6fc957-e158-4d60-a774-789bda36f09a/.user_uploaded/media_1794412899987_ef35f644.jpg
+You can embed these images in an artifact if you need the USER to review them.
+</ADDITIONAL_METADATA>
