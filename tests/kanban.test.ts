@@ -1,7 +1,7 @@
 // tests/kanban.test.ts
 // WORKZEN Phase 13: Project Kanban Board Integration Test Suite
 
-import { test, describe, before } from 'node:test';
+import { test, describe, before, after } from 'node:test';
 import assert from 'node:assert';
 import mongoose from 'mongoose';
 import { AuthService } from '../src/server/services/authService.js';
@@ -434,5 +434,11 @@ describe('Phase 13 — Kanban Board & Sprint Task Workflow Engine', () => {
       (err: any) => err.statusCode === 404,
       'Cannot move task belonging to a different project'
     );
+  });
+
+  after(async () => {
+    if (mongoose.connection.readyState !== 0) {
+      await mongoose.disconnect();
+    }
   });
 });

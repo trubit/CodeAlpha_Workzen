@@ -1,7 +1,7 @@
 // tests/projectMembers.test.ts
 // WORKZEN Phase 12: Project Members & Collaboration Test Suite
 
-import { test, describe, before } from 'node:test';
+import { test, describe, before, after } from 'node:test';
 import assert from 'node:assert';
 import mongoose from 'mongoose';
 import { AuthService } from '../src/server/services/authService.js';
@@ -365,5 +365,11 @@ describe('Phase 12 — Project Members & Collaboration Engine', () => {
     );
     assert.strictEqual(searchMatch.members.length, 1);
     assert.strictEqual(searchMatch.members[0].id, memberUser1._id.toString());
+  });
+
+  after(async () => {
+    if (mongoose.connection.readyState !== 0) {
+      await mongoose.disconnect();
+    }
   });
 });

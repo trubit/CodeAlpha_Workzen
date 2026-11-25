@@ -1,7 +1,7 @@
 // tests/subtasks-dependencies.test.ts
 // WORKZEN Phase 15: Subtasks & Dependencies Integration Test Suite
 
-import { test, describe, before } from 'node:test';
+import { test, describe, before, after } from 'node:test';
 import assert from 'node:assert';
 import mongoose from 'mongoose';
 import { AuthService } from '../src/server/services/authService.js';
@@ -533,5 +533,11 @@ describe('Phase 15 — Subtasks & Dependencies Enterprise Suite', () => {
         return true;
       }
     );
+  });
+
+  after(async () => {
+    if (mongoose.connection.readyState !== 0) {
+      await mongoose.disconnect();
+    }
   });
 });
