@@ -73,10 +73,13 @@ describe('Phase 13 — Kanban Board & Sprint Task Workflow Engine', () => {
           name: `Core Platform Sprint ${ts}`,
           key: 'PLAT',
           description: 'Platform infrastructure and core services sprint',
-          workspaceId: testWorkspace._id.toString(),
+          workspaceId: (testWorkspace.id || testWorkspace._id).toString(),
           color: '#4F46E5',
           priority: 'high',
-          visibility: 'workspace'
+          visibility: 'workspace',
+          status: 'planning',
+          memberIds: [],
+          tags: []
         }
       );
       testProjectId = (testProject.id || testProject._id).toString();
@@ -137,11 +140,14 @@ describe('Phase 13 — Kanban Board & Sprint Task Workflow Engine', () => {
         {
           name: `Isolated Project ${ts}`,
           key: 'ISOL',
-          workspaceId: outsiderWs._id.toString(),
+          workspaceId: (outsiderWs.id || outsiderWs._id).toString(),
           color: '#10B981',
           priority: 'medium',
           description: 'Isolated test project',
-          visibility: 'restricted'
+          visibility: 'restricted',
+          status: 'planning',
+          memberIds: [],
+          tags: []
         }
       );
       outsiderProjectId = (outsiderProject.id || outsiderProject._id).toString();

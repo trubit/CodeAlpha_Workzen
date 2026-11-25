@@ -68,7 +68,8 @@ export const archiveWorkspaceSchema = z.object({
     .trim()
 });
 
-export type CreateWorkspaceInput = z.infer<typeof createWorkspaceSchema>;
+export type CreateWorkspaceInput = z.input<typeof createWorkspaceSchema>;
+export type CreateWorkspaceOutput = z.output<typeof createWorkspaceSchema>;
 export type UpdateWorkspaceInput = z.infer<typeof updateWorkspaceSchema>;
 export type UpdateWorkspaceSettingsInput = z.infer<typeof updateWorkspaceSettingsSchema>;
 export type ArchiveWorkspaceInput = z.infer<typeof archiveWorkspaceSchema>;

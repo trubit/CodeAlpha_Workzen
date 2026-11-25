@@ -27,7 +27,8 @@ export const createProjectSchema = z.object({
   tags: z.array(z.string().trim()).optional().default([])
 });
 
-export type CreateProjectInput = z.infer<typeof createProjectSchema>;
+export type CreateProjectInput = z.input<typeof createProjectSchema>;
+export type CreateProjectOutput = z.output<typeof createProjectSchema>;
 
 export const updateProjectSchema = z.object({
   name: z.string().min(2, 'Project name must be at least 2 characters').max(120).trim().optional(),
