@@ -27,7 +27,8 @@ export const createTaskSchema = z.object({
   tags: z.array(z.string()).default([])
 });
 
-export type CreateTaskInput = z.infer<typeof createTaskSchema>;
+export type CreateTaskInput = z.input<typeof createTaskSchema>;
+export type CreateTaskOutput = z.output<typeof createTaskSchema>;
 
 export const updateTaskSchema = z.object({
   title: z.string().min(1, 'Title cannot be empty').max(255).trim().optional(),
@@ -144,7 +145,8 @@ export const kanbanBoardQuerySchema = z.object({
   sortBy: z.enum(['order', 'priority', 'dueDate', 'createdAt']).optional().default('order')
 });
 
-export type KanbanBoardQuery = z.infer<typeof kanbanBoardQuerySchema>;
+export type KanbanBoardQuery = z.input<typeof kanbanBoardQuerySchema>;
+export type KanbanBoardQueryOutput = z.output<typeof kanbanBoardQuerySchema>;
 
 export const createSubtaskSchema = z.object({
   title: z.string().min(1, 'Title is required').max(255, 'Title must be under 255 characters').trim(),

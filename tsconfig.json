@@ -23,6 +23,6 @@
       "@server/*": ["src/server/*"]
     }
   },
-  "include": ["src/**/*", "tests/**/*", "vite.config.ts"]
+  "include": ["src/client", "src/shared", "vite.config.ts"]
 }
 

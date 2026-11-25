@@ -12,6 +12,11 @@ import {
   KanbanBoardQuery
 } from '../../shared/validation/task.js';
 
+export type CreateKanbanTaskInput = Omit<CreateTaskInput, 'projectId' | 'workspaceId'> & {
+  projectId?: string;
+  workspaceId?: string;
+};
+
 export interface FormattedKanbanTask {
   id: string;
   taskNumber: number;
@@ -316,7 +321,7 @@ export class KanbanService {
     userId: string,
     organisationId: string,
     projectId: string,
-    input: CreateTaskInput
+    input: CreateKanbanTaskInput
   ): Promise<FormattedKanbanTask> {
     const orgObjId = new mongoose.Types.ObjectId(organisationId);
     const userObjId = new mongoose.Types.ObjectId(userId);

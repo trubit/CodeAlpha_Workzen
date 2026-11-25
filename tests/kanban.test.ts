@@ -60,7 +60,8 @@ describe('Phase 13 — Kanban Board & Sprint Task Workflow Engine', () => {
         {
           name: `Kanban Workspace ${ts}`,
           slug: `kanban-ws-${ts}`,
-          department: 'Engineering'
+          type: 'engineering',
+          isPrivate: false
         }
       );
 
@@ -73,7 +74,6 @@ describe('Phase 13 — Kanban Board & Sprint Task Workflow Engine', () => {
           key: 'PLAT',
           description: 'Platform infrastructure and core services sprint',
           workspaceId: testWorkspace._id.toString(),
-          category: 'development',
           color: '#4F46E5',
           priority: 'high',
           visibility: 'workspace'
@@ -126,7 +126,8 @@ describe('Phase 13 — Kanban Board & Sprint Task Workflow Engine', () => {
         {
           name: `Isolated WS ${ts}`,
           slug: `isolated-ws-${ts}`,
-          department: 'Security'
+          type: 'operations',
+          isPrivate: true
         }
       );
 
@@ -137,7 +138,9 @@ describe('Phase 13 — Kanban Board & Sprint Task Workflow Engine', () => {
           name: `Isolated Project ${ts}`,
           key: 'ISOL',
           workspaceId: outsiderWs._id.toString(),
-          category: 'operations',
+          color: '#10B981',
+          priority: 'medium',
+          description: 'Isolated test project',
           visibility: 'restricted'
         }
       );
